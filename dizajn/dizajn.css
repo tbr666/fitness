@@ -1,0 +1,411 @@
+body {
+    width: 100%;
+    padding: 2%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #EB88E4;
+}
+#header {
+    color: white;
+    height: 3.5em;
+    text-align: center;
+    padding: 2%;
+    border: 1px solid black;
+    background:  url("slike/backlight.png") repeat;
+}
+
+#section {
+    width: 96%;
+    padding: 2%;
+    background-color: #eb88e4;
+}
+#prikaz {
+    width: 96%;
+    padding: 2%;
+    background-color: #eb88e4;
+}
+#content {
+    background-color: #eb88e4;
+    width: 96%;
+    padding: 2%;
+    color: black;
+}
+#lijevi {
+    float: left;
+    width: 46%;
+}
+#desni {
+    float: right;
+    width: 46%;
+}
+#prvi {
+    float: left;
+    width: 46%;
+}
+#drugi {
+    float: right;
+    width: 46%;
+}
+label {
+    font-family: Lucida Sans Unicode;
+    color: black;
+    font-size: 1em;
+    margin-left: 1em;
+}
+.hoverDiv {
+    display: none;
+    height:2%;
+    width:15%;
+    margin-left:1%;
+    padding:0;
+}
+.hoverDivLarge {
+    display: none;
+    height:2%;
+    width:20%;
+    margin-left:1%;
+    padding:0;
+}
+
+a:hover + div {
+    display: inline-block;
+}​
+
+
+.grupaLabel {
+    margin-left: 1.5em;
+}
+.linkLabel {
+    color:#1E4FA3;
+    visibility:hidden;
+}
+.linkLabelVisible {
+    color:#1E4FA3;
+}
+.linkLabelHover {
+    color:#1E4FA3;
+    margin:0 px !important;
+}
+.linkLabelVisibleDesno{
+    color:#1E4FA3;
+    position:relative;
+    left: 50%;
+}
+input[type=text],
+input[type=password],
+input[type=email] {
+    font-family: Lucida Sans Unicode;
+    border: 1px solid black;
+    text-align: left;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: black;
+    background-color: #e9bae6;
+    width: 15%;
+    padding: 8px 16px;
+    margin: 16px 0;
+}
+input.centeredText {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+input[type=checkbox].program{
+    color: #e9bae6;
+    margin-left: 3%;
+}
+input[type=checkbox].grupa{
+    background-color: #e9bae6;
+    margin-left: 5%;
+}
+select.pravoSelect {
+    text-align: center;
+    width: 20%;
+    color: black;
+    background-color: #e9bae6;
+    margin-left: 3%;
+}
+select.vrstaSelect {
+    text-align: center;
+    width: 50%;
+    color: black;
+    background-color: #e9bae6;
+    margin-left: 3%;
+}
+.centerButton {
+    color: black;
+    border: none;
+    background-color: #c9c2d1;
+    padding: 8px 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    width: 8%;
+    height: auto;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.centerButton:hover {
+    background-color: #97929F;
+    color: #343234;
+    cursor: pointer;
+}
+.commonButton {
+    color: black;
+    border: none;
+    background-color: #c9c2d1;
+    padding: 8px 8px;
+    display: block;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 10%;
+    height: auto;
+    display:inline;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.commonButton:hover {
+    background-color: #97929F;
+    color: #343234;
+    cursor: pointer;
+}
+.smallButton {
+    color: black;
+    border: none;
+    background-color: #c9c2d1;
+    padding: 2px 2px;
+    display: block;
+    margin-left: 3%;
+    margin-right: 1%;
+    width: 2%;
+    height: auto;
+    display:inline;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.smallButton:hover {
+    background-color: #97929F;
+    color: #343234;
+    cursor: pointer;
+}
+.commonButtonWide {
+    color: black;
+    border: none;
+    background-color: #c9c2d1;
+    padding: 8px 8px;
+    display: block;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 24%;
+    height: auto;
+    display:inline;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.commonButtonWide:hover {
+    background-color: #97929F;
+    color: #343234;
+    cursor: pointer;
+}
+.headerLabel {
+    color: black;
+    margin: 2em;
+    font-family: Lucida Sans Unicode;
+    font-size: 1.1em;
+}
+A {
+    text-decoration: none;
+    color: white;
+}
+A:link {
+    color: white;
+}
+A:visited {
+    color: white;
+}
+A.working {
+color: black;
+}
+A.working:hover {
+    color: red;
+    -webkit-animation: color 1s ease;
+    -moz-animation: color 1s ease;
+    -ms-animation: color 1s ease;
+    -o-animation: color 1s ease;
+    animation: color 1s ease;
+}
+A.notWorking:hover {
+    color: red;
+}
+a:active {
+    color: white;
+}
+@keyframes color {
+    from {
+        color: black;
+    }
+    to {
+        color: red;
+    }
+}
+@-webkit-keyframes color {
+    from {
+        color: black;
+    }
+    to {
+        color: red;
+    }
+}
+.headImage {
+    width: 20%;
+    height: auto;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.smallImage {
+    width: 13%;
+    height: auto;
+    float:left;
+    position:absolute;
+    left:2%;
+    top:2%;
+}
+h1 {
+    color: black;
+    margin: 16px 0;
+    font-family: Lucida Sans Unicode;
+    font-size: 1.5em;
+}
+h2 {
+    color: black;
+    margin: 16px 0;
+    font-family: Lucida Sans Unicode;
+    font-size: 1.3em;
+}
+h3 {
+    color: black;
+    margin: 16px 0;
+    font-family: Lucida Sans Unicode;
+    font-size: 1.1em;
+}
+.rightTitle {
+    position:absolute;
+    right:2%;
+    top: 2%;
+}
+table, td, th {
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+input.uskiTekst {
+    font-family: Lucida Sans Unicode;
+    width: 20% !important;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+textArea {
+    resize: none;
+    background-color: #e9bae6;
+    color: black;
+    border: 2px solid;
+    text-align: left;
+    -moz-text-align: left;
+    -webkit-text-align: left;
+    -ms-text-align: left;
+    -o-text-align: left;
+    text-align-last: left;
+    -moz-text-align-last: left;
+    -webkit-text-align-last: left;
+    -ms-text-align-last: left;
+    text-align-last: left;
+}
+
+tr:hover {
+ 
+background-color:#F0BEED;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+table.manja {
+    width: 60% !important;
+    margin-left:auto;
+    margin-right:auto;
+}
+table.clanovi {
+    width: 100% !important;
+    margin-left:auto;
+    margin-right:auto;
+    overflow-y: auto !important;
+}
+
+::-webkit-input-placeholder {
+    font-family: Lucida Sans Unicode;
+    color:#595959;
+}
+:-moz-placeholder {
+    font-family: Lucida Sans Unicode;
+    color:#595959;
+}
+::-moz-placeholder {
+    font-family: Lucida Sans Unicode;
+    color:#595959;
+}
+:-ms-input-placeholder {
+    font-family: Lucida Sans Unicode;
+    color:#595959;
+}
+.controlWidget {
+    width: 5%;
+    margin-left:2%;
+}
+.controlWidgetDesni {
+    width: 5%;
+    margin-left:50%;
+}
+.controlWidgetVeliki {
+    width: 12%;
+    margin-left:3%;
+}
+.controlWidget:hover {
+    -ms-filter: brightness(75%);
+    -moz-filter: brightness(75%);
+    -webkit-filter: brightness(75%);
+    filter: brightness(75%);
+    -o-filter: brightness(75%);
+    cursor: pointer;
+}
+.controlWidgetDesni:hover {
+     -ms-filter: brightness(75%);
+    -moz-filter: brightness(75%);
+    -webkit-filter: brightness(75%);
+    filter: brightness(75%);
+    -o-filter: brightness(75%);
+    cursor: pointer;
+}
+.controlWidgetVeliki:hover {
+     -ms-filter: brightness(75%);
+    -moz-filter: brightness(75%);
+    -webkit-filter: brightness(75%);
+    filter: brightness(75%);
+    -o-filter: brightness(75%);
+    cursor: pointer;
+}
+

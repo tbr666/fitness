@@ -1,0 +1,54 @@
+body {
+    width: 100%;
+    padding: 2%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color:black;
+    background-color: white;
+}
+
+h1 {
+    color: black;
+    margin:1em;
+    font-family: Lucida Sans Unicode;
+    font-size: 1.5em;
+}
+h2 {
+    color: black;
+    margin: 16px 0;
+    font-family: Lucida Sans Unicode;
+    font-size: 1.3em;
+}
+h3 {
+    color: black;
+    margin: 16px 0;
+    font-family: Lucida Sans Unicode;
+    font-size: 1.1em;
+}
+table, td, th {
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+table.narrow {
+   width:30% !important; 
+   margin:5%;
+}
+
+table.middle {
+   width:60% !important; 
+   margin:5%;
+}
+
+
